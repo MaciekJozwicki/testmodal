@@ -18,7 +18,7 @@ ul {
     list-style-type: none;
 }
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 .section {
@@ -93,6 +93,7 @@ ul {
 
 .hero {
     background-color: var(--color-background);
+    padding: 200px 452px 280px 452px;
 }
 .hero-header {
     font-size: 44px;
@@ -102,7 +103,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    padding: 200px 452px 280px 452px;
+    
 }
 .hero-button {
     background-color: var(--color-logo);
@@ -113,6 +114,8 @@ ul {
     border: none;
     border-radius: 4px;
     margin-top: 30px;
+    margin-left: 200px;
+    
 
 }
 .hero-button:hover {
@@ -160,10 +163,12 @@ ul {
 .team {
     background-color: var(--color-whiteF5);
 }
-.team-header {
+.team h2 {
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 .team-name {
     font-size: 16px;
@@ -171,11 +176,11 @@ ul {
     letter-spacing: 0.03em;
 
 }
-.team-job {
+/* .team-job {
     color: var(--color-text);
     font-size: 16px;
     letter-spacing: 0.03em;
-}
+} */
 .team h2 {
     text-align: center;
 }
@@ -183,6 +188,7 @@ ul {
     display: flex;
     gap: 30px;
     justify-content: center;
+    padding-bottom: 94px;
 }
 .team-item {
 box-shadow: 0px 2px 1px 0px #00000033;
@@ -191,23 +197,18 @@ box-shadow: 0px 1px 3px 0px #0000001F;
 border-radius: 0px 0px 4px 4px;
 background: #FFFFFF;
 }
-/* PORTFOLIO FILTER BUTTONS */
-.filter-button {
+.team-item h3 {
+padding: 30px 99px 59px 99px;
+}
+.team-item p {
+    color: var(--color-text);
     font-size: 16px;
-    line-height: 1.62;
     letter-spacing: 0.03em;
-    background-color: var(--color-whiteF5);
-    color: var(--color-grey21);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
-.filter-button:hover {
-    background-color: var(--color-logo);
-    color: var(--color-white);
-    cursor: pointer;
-}
-.filter-button:focus {
-    background-color:var(--color-logo) ;
-    color: var(--color-white);
-}
+
 /* PORTFOLIO CONTENT */
 figcaption h3 {
     font-size: 18px;
@@ -222,9 +223,58 @@ figcaption p {
     letter-spacing: 0.03;
     color: var(--color-text);
 }
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.article-list figure {
+    border: 1px solid #EEEEEE;
+}
+.article-list figcaption {
+padding: 20px 24px;
+}
+.portfolio-content {
+    padding: 94px 0;
+}
+/* PORTFOLIO FILTER BUTTONS */
+.filter-button {
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: var(--color-whiteF5);
+    color: var(--color-grey21);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    
+}
+.filter-button:hover {
+    background-color: var(--color-logo);
+    color: var(--color-white);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-button:focus {
+    background-color:var(--color-logo) ;
+    color: var(--color-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-nav ul {
+    display: flex;
+}
+.filter {
+    gap: 9px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
 /* FOOTER */
 .footer {
     background-color: var(--color-background);
+}
+.footer-content {
+    padding: 60px 0;
 }
 .logo-footer {
     color: var(--color-white);
@@ -238,6 +288,10 @@ figcaption p {
     color: var(--color-white);
     text-decoration: none;
     letter-spacing: 0.03em;
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 9px;
 }
 .footer-adress-contact:hover, .footer-adress-contact:focus {
     color: var(--color-logo);
