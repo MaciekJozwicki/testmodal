@@ -93,7 +93,6 @@ ul {
 
 .hero {
     background-color: var(--color-background);
-    height: 600px;
 }
 .hero-header {
     font-size: 44px;
@@ -103,6 +102,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    padding: 200px 452px 280px 452px;
 }
 .hero-button {
     background-color: var(--color-logo);
@@ -112,6 +112,8 @@ ul {
     width: 200px;
     border: none;
     border-radius: 4px;
+    margin-top: 30px;
+
 }
 .hero-button:hover {
     cursor: pointer;
@@ -176,7 +178,6 @@ ul {
 }
 .team h2 {
     text-align: center;
-    margin: 94px 495px 512px 495px;
 }
 .team ul {
     display: flex;
