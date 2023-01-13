@@ -446,7 +446,7 @@ padding: 20px 24px;
 .footer {
     background-color: var(--color-background);
 }
-.footer-content {
+.footer__wrapper {
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -457,7 +457,7 @@ padding: 20px 24px;
     font-size: 26px;
     font-weight: bold;
 }
-.footer-adress {
+.footer__adress {
     font-size: 14px;
     line-height: 1.7;
     color: var(--color-white);
@@ -468,10 +468,10 @@ padding: 20px 24px;
     margin-top: 20px;
     gap: 9px;
 }
-.footer-adress-contact:hover, .footer-adress-contact:focus {
+.footer__adress-contact:hover, .footer__adress-contact:focus {
     color: var(--color-logo);
 }
-.footer-adress-contact {
+.footer__adress-contact {
     font-size: 14px;
     line-height: 1.7;
     color: var(--color-footcontct);
@@ -479,39 +479,39 @@ padding: 20px 24px;
     letter-spacing: 0.03em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-adress-map {
+.footer__adress-map {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-adress-map:link, .footer-adress-map:visited {
+.footer__adress-map:link, .footer__adress-map:visited {
     color: var(--color-white);
     text-decoration: none;
 }
-.footer-adress-map:hover {
+.footer__adress-map:hover {
     color: var(--color-logo);
 }
 /* SOCIAL LINKS */
-.footer-social {
+.footer__social {
     margin-left: 70px;
     margin-top: 72px;
 }
-.footer-social-links {
+.footer__social-list {
     display: flex;
     gap: 10px;
 }
-.footer-social-title {
+.footer__social-header {
     padding-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--color-white)
 }
-.footer-social-link {
+.footer__social-link-icon {
     border-radius: 50%;
     fill: var(--color-white);
     background-color: var(--color-footsocial);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
-.footer-social-list:hover .footer-social-link {
+.footer__social-link:hover .footer__social-link-icon {
     background-color: var(--color-logo);
     cursor: pointer;
 }
