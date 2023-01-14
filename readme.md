@@ -1,1 +1,1 @@
-https://maciekjozwicki.github.io/goit-markup-hw-06/
+https://maciekjozwicki.github.io/exerciserepo/index.html
