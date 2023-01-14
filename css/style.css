@@ -520,7 +520,7 @@ padding: 20px 24px;
     margin-top: 72px;
     margin-left: 77px; 
 }
-.newsletter__title {
+.newsletter__header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -569,7 +569,7 @@ padding: 20px 24px;
     margin-top: 20px;
     cursor: pointer;
 }
-.newsletter__svg {
+.newsletter__button-icon {
     fill: white;
     margin-left: 24px;
 }
@@ -588,7 +588,6 @@ padding: 20px 24px;
     top: calc(50% - 290px);
     left: calc(50% - 264px);
     max-width: 528px;
-    height: 581px;
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -597,7 +596,7 @@ padding: 20px 24px;
     padding: 40px;
     transition: transform 500ms ease;
 }
-.modal-close-btn {
+.modal__close-button {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -608,6 +607,15 @@ padding: 20px 24px;
     border-radius: 50%;
     cursor: pointer;
 }
+.modal__header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+  }
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -630,33 +638,42 @@ padding: 20px 24px;
     justify-content: center;
     gap: 10px;
   }
-.form__wrapper {
-    /* width: 528px;
-    height: 581px;
-    padding: 40px;
-    position: absolute;
-    left: 300px;
-    top: 80px;
-    position: absolute;
-    left: 0;
-    top: 0; */
+  .form__elements {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
-  .form__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 30px;
+  .form__label {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+    letter-spacing: 0.01em;
   }
-  
-  .form__textarea {
+  .form__input {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+  }
+  .form__elements:focus-within .form__input {
+    border: 1px solid #2196F3;
+  }
+  .form__elements:focus-within .form__icon {
+    fill: #2196F3;
+  }
+  .form__input-textarea {
     height: 120px;
     resize: none;
     padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
   }
-  .form__textarea::placeholder {
+  .form__input-textarea::placeholder {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -664,30 +681,6 @@ padding: 20px 24px;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-  }
-  
-  .form__element {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  .form__element input, textarea {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: none;
-  }
-  .form__element label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #757575;
-    letter-spacing: 0.01em;
-  }
-  .form__element:focus-within input {
-    border: 1px solid #2196F3;
-  }
-  .form__element:focus-within .form__icon {
-    fill: #2196F3;
   }
   .form__submit {
     padding: 10px 76px;
@@ -707,55 +700,38 @@ padding: 20px 24px;
     margin-top: 30px;
     cursor: pointer;
   }
-
-  .form-regulations {
-    color:#2196F3;
-    text-decoration: underline;
-  }
-  .form__input {
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 42px;
-  }
-  .form__label {
-    position: relative;
-  }
   .form__icon {
     position: absolute; 
     top: 32px;
     left: 12px;
   }
-  .form-checkbox {
-    flex-direction: row-reverse;
-    justify-content:space-evenly;
-  }
-  .checkbox-title {
+  .form__checkbox {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-  }
-
-  .labelka {
     position: relative;
-    
   }
-  .input {
+  .form__checkbox-input {
     border: 2px solid #212121;
     border-radius: 2px;
     width: 16px;
     height: 15px;
     appearance: none;
   }
-  .form__icon--agree {
+  .form__checkbox-regulations {
+    color:#2196F3;
+    text-decoration: underline;
+  }
+  .form__checkbox-custom-icon {
     position: absolute;
     left: 0;
-    bottom: 4px;
+    bottom: 7px;
     opacity: 0;
     border-radius: 2px;
     fill: #fff;
   }
-  .input:checked ~ .form__icon--agree {
+  .form__checkbox-input:checked + .form__checkbox-custom-icon {
     background-color: #2196f3;
     border-color: #2196f3;
     opacity: 1;
