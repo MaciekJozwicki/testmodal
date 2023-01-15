@@ -1,0 +1,131 @@
+.footer {
+    background-color: $secondaryBackgroundColor;
+    &__wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+    }
+    &__adress {
+        font-size: 14px;
+        line-height: 1.7;
+        color: $whiteColor;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        display:flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 9px;
+    }
+    &__adress-contact {
+        font-size: 14px;
+        line-height: 1.7;
+        color: $footerContactColor;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        transition: color 250ms $primaryTransition;
+    }
+    &__adress-contact:hover,
+    &__adress-contact:focus {
+        color: $brandColor;
+    }
+    &__adress-map {
+        transition: color 250ms $primaryTransition;
+    }
+    &__adress-map:link,
+    &__adress-map:visited {
+        color: $whiteColor;
+        text-decoration: none;
+    }
+    &__adress-map:hover {
+        color: $brandColor;
+    }
+
+
+
+    &__social {
+        margin-left: 70px;
+        margin-top: 72px;
+    }
+    &__social-list {
+        display: flex;
+        gap: 10px;
+    }
+    &__social-header {
+        padding-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: $whiteColor;
+    }
+    &__social-link-icon {
+        border-radius: 50%;
+        fill: $whiteColor;
+        background-color: $footerSocialColor;
+        transition: background-color 250ms $primaryTransition;
+    }
+    &__social-link:hover {
+        .footer__social-link-icon {
+            background-color: $brandColor;
+            cursor: pointer;
+        }
+    }
+    
+
+
+    &__newsletter {
+        margin-top: 72px;
+        margin-left: 77px; 
+    }
+    &__newsletter-header {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $whiteColor;
+    }
+    &__newsletter-elements {
+        display: flex;
+    }
+    &__newsletter-input {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding: 15px 158px 15px 16px;
+        display: flex;
+        align-items: center;
+        color: $footerContactColor;
+        background-color: $secondaryBackgroundColor;
+        margin-top: 20px;
+        margin-right: 12px;
+    }
+    &__newsletter-input::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+    }
+    &__newsletter-button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background-color: $brandColor;
+        border: none;
+        border-radius: 4px;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    &__newsletter-button-icon {
+        fill: $whiteColor;
+        margin-left: 24px;
+    }
+}
