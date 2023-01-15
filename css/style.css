@@ -315,7 +315,7 @@ ul {
 
 /* OUR CLIENTS */
 
-.our-clients__header {
+/* .our-clients__header {
     margin-bottom: 50px;
     text-align: center;
     font-weight: 700;
@@ -344,11 +344,11 @@ ul {
 .our-clients__item:hover, .our-clients__item:focus {
     border-color: var(--color-logo);
     cursor: pointer;
-}
+} */
 
 /* PORTFOLIO FILTER BUTTONS */
 
-
+/* 
 .portfolio__navigation {
     display: flex;
     gap: 9px;
@@ -378,13 +378,13 @@ ul {
     background-color:var(--color-logo) ;
     color: var(--color-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 
 /* PORTFOLIO ARTICLES */
 
 
-.portfolio {
+/* .portfolio {
     padding: 94px 0;
 }
 .portfolio__elements {
@@ -442,7 +442,7 @@ ul {
      0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
-}
+} */
 
 
 /* FOOTER */
