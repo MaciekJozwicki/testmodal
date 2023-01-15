@@ -1,0 +1,68 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--bgcolor {
+        background-color: $backgroundColor;
+    }
+    &__header {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    &__list-item {
+        box-shadow: 0px 2px 1px 0px #00000033;
+        box-shadow: 0px 1px 1px 0px #00000024;
+        box-shadow: 0px 1px 3px 0px #0000001F;
+        border-radius: 0px 0px 4px 4px;
+        background: #FFFFFF;
+    }
+    &__employee-name {
+        padding: 30px 99px 10px 99px;
+        font-size: 16px;
+        font-weight: medium;
+        letter-spacing: 0.03em;
+    }
+    &__employee-job {
+        text-align: center;
+        padding-bottom: 30px;
+        color: $secondaryFontColor;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+    &__social-list {
+        display: flex;
+        gap: 10px;
+        margin-right: 32px;
+        margin-left: 32px;
+        margin-bottom: 30px;
+    }
+    &__social-link {
+        fill: $ourteamSocialColor;
+        transition: fill 250ms $primaryTransition;
+    }
+    &__social-link-wrapper {
+        background-color: $whiteColor;
+        border-radius: 50%;
+        transition: background-color 250ms $primaryTransition;
+    }
+    &__social-link:hover,
+    &__social-link:focus {
+
+        .team__social-icon {
+            fill: $whiteColor;
+            cursor: pointer;
+        }
+        .team__social-link-wrapper {
+            background-color: $brandColor;
+            cursor: pointer;
+        }
+    }
+}
