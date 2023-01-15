@@ -6,7 +6,7 @@
     --color-logohead: #000000;
     --color-whiteF5: #F5F4FA;
     --color-white: #FFFFFF;
-    --color-footcontct: rgba(255%,255%,255%,60%);
+    --color-footcontct: rgba(255,255,255,0.6);
     --color-footsocial: rgba(255, 255, 255, 0.1);
     --color-teamsocial: #AFB1B8;
     --color-article-ext: rgba(33, 150, 243, 0.9);
@@ -567,7 +567,6 @@ ul {
     background-color: var(--color-logo);
     border: none;
     border-radius: 4px;
-    /* padding: 10px 28px 10px 42px; */
     width: 200px;
     height: 50px;
     display: flex;
