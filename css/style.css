@@ -33,17 +33,17 @@ ul {
     color: var(--color-grey21);
 }
 /* HEADER */
-.header {
+/* .header {
     border-bottom: 1px solid #ECECEC;
-}
-.header__wrapper {
+} */
+/* .header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items:center;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-.header__nav {
+} */
+/* .header__nav {
     display: flex;
     align-items: center;
     gap: 93px;
@@ -53,9 +53,9 @@ ul {
     gap: 46px;
     position: relative;
     
-}
+} */
 
-.logo {
+/* .logo {
     color: var(--color-logo);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -65,20 +65,17 @@ ul {
 }
 .logo--second-part {
     color: var(--color-logohead);
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-}
+} */
 
-.header__nav-item {
+/* .header__nav-item {
     font-size: 14px;
     text-decoration: none;
     letter-spacing: 0.02em;
     color: var(--color-grey21);
     font-weight: 500;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.is-active::after {
+} */
+/* .is-active::after {
     content: '';
     width: 58px;
     height: 4px;
@@ -88,12 +85,12 @@ ul {
     background-color: #2196F3;
     border-radius: 2px;
     position: absolute;
-}
-.header__nav-item:hover, .header__nav-item:focus {
+} */
+/* .header__nav-item:hover, .header__nav-item:focus {
     color: var(--color-logo);
     cursor: pointer;
-}
-.header__nav-item:hover::after,
+} */
+/* .header__nav-item:hover::after,
 .header__nav-item:focus::after {
     content: '';
     width: 58px;
@@ -104,8 +101,8 @@ ul {
     background-color: #2196F3;
     border-radius: 2px;
     position: absolute;
-}
-.header__contacts {
+} */
+/* .header__contacts {
     display:flex;
     align-items: center;
     gap: 30px;
@@ -118,14 +115,14 @@ ul {
     letter-spacing: 0.02em;
     font-weight: 500;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__contacts-item-icon {
+} */
+/* .header__contacts-item-icon {
     fill: var(--color-text);
     margin-right: 10px;
     padding: 0;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}       
-.header__contacts-item:hover .header__contacts-item-icon {
+}        */
+/* .header__contacts-item:hover .header__contacts-item-icon {
     fill: var(--color-logo);
 }
 .header__contacts-item:focus .header__contacts-item-icon {
@@ -134,7 +131,7 @@ ul {
 .header__contacts-item:hover, .header__contacts-item:focus {
     color: var(--color-logo);
     cursor: pointer;
-}     
+}      */
 
 /* INDEX HERO */
 
