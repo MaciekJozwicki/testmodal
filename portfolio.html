@@ -15,7 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
     <title>Portfolio</title>
   </head>
 
@@ -111,7 +111,7 @@
 
           <!-- PORTFOLIO ARTICLES -->
 
-          <ul class="portfolio__elements">
+          <ul class="portfolio__elements container">
             <li class="portfolio__item">
               <div class="portfolio__item-content">
                 <img
@@ -337,8 +337,8 @@
       <div class="footer__wrapper container">
         <!-- ADRESS -->
         <address class="footer__adress">
-          <a href="index.html" class="footer-logo logo"
-            >Web<span class="logo-footer">Studio</span></a
+          <a href="index.html" class="logo"
+            >Web<span class="logo logo--footer">Studio</span></a
           >
           <a
             class="footer__adress-map"
@@ -398,22 +398,26 @@
         </div>
         <!-- NEWSLETTER -->
 
-        <div class="newsletter">
+        <div class="footer__newsletter">
           <form>
-            <label class="newsletter__header" for="email-newsletter"
+            <label class="footer__newsletter-header" for="email-newsletter"
               >Zapisz się do newslettera</label
             >
-            <div class="newsletter__elements">
+            <div class="footer__newsletter-elements">
               <input
                 type="email"
                 name="email-newsletter"
                 placeholder="E-mail"
-                class="newsletter__input"
+                class="footer__newsletter-input"
                 required
               />
-              <button type="submit" class="newsletter__button">
+              <button type="submit" class="footer__newsletter-button">
                 Zapisz się
-                <svg width="24" height="24" class="newsletter__button-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  class="footer__newsletter-button-icon"
+                >
                   <use
                     width="24"
                     height="24"

@@ -1,1 +1,35 @@
 @import 'utils/vars';
+@import 'components/example';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/logo';
+@import 'components/modal';
+@import 'components/our-clients';
+@import 'components/our-team';
+@import 'components/portfolio';
+@import 'components/what-we-do';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+.page-content {
+
+    font-family: 'Roboto', sans-serif;
+    color: $primaryFontColor;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
