@@ -43,6 +43,17 @@
         border-radius: 2px;
         position: absolute;
     }
+    &__nav-item--is-active::after {
+        content: '';
+        width: 58px;
+        height: 4px;
+        top: 46px;
+        display: flex;
+        justify-content: center;
+        background-color: $brandColor;
+        border-radius: 2px;
+        position: absolute;
+    }
     &__contacts {
         display:flex;
         align-items: center;
@@ -71,16 +82,4 @@
             fill: $brandColor;
         }
     }
-}
-
-.is-active::after {
-    content: '';
-    width: 58px;
-    height: 4px;
-    top: 46px;
-    display: flex;
-    justify-content: center;
-    background-color: $brandColor;
-    border-radius: 2px;
-    position: absolute;
 }
