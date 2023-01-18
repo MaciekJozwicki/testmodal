@@ -1,9 +1,11 @@
 .footer {
     background-color: $secondaryBackgroundColor;
+
     &__wrapper {
         padding-top: 60px;
         padding-bottom: 60px;
         display: flex;
+        flex-direction: column;
     }
     &__adress {
         font-size: 14px;
@@ -13,8 +15,10 @@
         letter-spacing: 0.03em;
         display:flex;
         flex-direction: column;
+        align-items: center;
         margin-top: 20px;
         gap: 9px;
+        margin-bottom: 60px;
     }
     &__adress-contact {
         font-size: 14px;
@@ -43,12 +47,13 @@
 
 
     &__social {
-        margin-left: 70px;
-        margin-top: 72px;
+        display: flex;
+       flex-direction: column;
     }
     &__social-list {
         display: flex;
         gap: 10px;
+        justify-content: center;
     }
     &__social-header {
         padding-bottom: 20px;
@@ -56,6 +61,9 @@
         font-size: 14px;
         letter-spacing: 0.03em;
         color: $whiteColor;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
     }
     &__social-link-icon {
         border-radius: 50%;
@@ -73,8 +81,10 @@
 
 
     &__newsletter {
-        margin-top: 72px;
-        margin-left: 77px; 
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin-top: 60px;
     }
     &__newsletter-header {
         font-family: 'Roboto';
@@ -85,9 +95,12 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $whiteColor;
+        display: flex;
+        justify-content: center;
     }
     &__newsletter-elements {
         display: flex;
+        flex-direction: column;
     }
     &__newsletter-input {
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -127,5 +140,38 @@
     &__newsletter-button-icon {
         fill: $whiteColor;
         margin-left: 24px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    
+    .footer {
+        &__wrapper {
+            flex-direction: row;
+        }
+        &__adress {
+            align-items: flex-start;
+        }
+        &__social {
+            display: block;
+            margin-left: 70px;
+            margin-top: 72px;
+        }
+        &__social-header {
+            display: block;
+            text-transform: capitalize;
+        }
+        &__newsletter {
+            display: block;
+            margin-top: 72px;
+            margin-left: 77px; 
+        }
+        &__newsletter-header {
+            display: block;
+        }
+        &__newsletter-elements {
+            display: flex;
+            flex-direction: row;
+        }
     }
 }

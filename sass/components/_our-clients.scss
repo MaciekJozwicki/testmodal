@@ -9,7 +9,9 @@
     }
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
+        justify-content: space-around;
     }
     &__item {
         border: 1px solid $thirdBackgroundColor;
@@ -29,5 +31,12 @@
     &__item-icon:focus {
         fill: $brandColor;
         cursor: pointer;
+    }
+}
+@media screen and (min-width:1200px) {
+    .our-clients {
+        &__list {
+            flex-wrap: nowrap;
+        }
     }
 }
