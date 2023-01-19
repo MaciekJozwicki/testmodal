@@ -85,6 +85,7 @@
        flex-direction: column;
        justify-content: center;
        margin-top: 60px;
+       max-width: 450px;
     }
     &__newsletter-header {
         font-family: 'Roboto';
@@ -150,6 +151,7 @@
     .footer {
         &__wrapper {
             flex-direction: row;
+            
         }
         &__adress {
             align-items: flex-start;
@@ -175,5 +177,9 @@
             display: flex;
             flex-direction: row;
         }
+        &__newsletter-button {
+            
+        }
+
     }
 }

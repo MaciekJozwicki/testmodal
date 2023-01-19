@@ -1,16 +1,84 @@
-
-@media screen and (min-width:1200px) {
-    .hero {
+.hero {
         background-color: $secondaryBackgroundColor;
-        background-image: linear-gradient(
+         background-image: linear-gradient(
             90deg,
             rgba(47, 48, 58, 0.4) 0%,
             rgba(47, 48, 58, 0.4) 0%
         ),
-        url('../images/hero/hero-img.jpg');
+        url('../images/hero/hero-mobile.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 1600px;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__header {
+            font-size: 44px;
+            line-height: 1.36;
+            color: $whiteColor;
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            text-align: center;
+            max-width: 696px;
+            margin-bottom: 30px;
+        }
+        &__button {
+            background-color: $brandColor;
+            letter-spacing: 0.06em;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 41px 10px 42px;   
+        }
+        &__button:hover {
+            cursor: pointer;
+        }
+        &__button-content {
+            font-size: 16px;
+            letter-spacing: 0.06em;
+            line-height: 1.87;
+            color: $whiteColor;
+        }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image:url('../images/hero/hero-desktop@2x.jpg');
+  }
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        background-image:   linear-gradient(
+            90deg,
+            rgba(47, 48, 58, 0.4) 0%,
+            rgba(47, 48, 58, 0.4) 0%
+        ),
+        url('../images/hero/hero-tablet.jpg');
+    }
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .hero {
+        background-color: $secondaryBackgroundColor;
+        background-image:   linear-gradient(
+            90deg,
+            rgba(47, 48, 58, 0.4) 0%,
+            rgba(47, 48, 58, 0.4) 0%
+        ),
+        url('../images/hero/hero-desktop.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         padding-top: 200px;
         padding-bottom: 200px;
         text-align: center;

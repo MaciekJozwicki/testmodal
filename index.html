@@ -73,7 +73,7 @@
     <main>
       <!-- HERO -->
       <section>
-        <div class="hero ">
+        <div class="hero">
           <h1 class="hero__header">
             Efektywne rozwiązania dla waszego biznesu
           </h1>
@@ -186,12 +186,21 @@
           <h2 class="team__header">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team__list-item">
-              <img
-                src="./images/our_team/man1.jpg"
-                alt="man with beard and glasses in violet shirt"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/our-team/imgman1-mobile.jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/our-team/imgman1-tablet.jpg"
+                  media="(max-width: 1200px)"
+                />
+                <img
+                  alt="man with beard and glasses in violet shirt"
+                  src="./images/our_team/man1.jpg"
+                  srcset="./images/our-team/imgman1@2x.jpg"
+                />
+              </picture>
               <h3 class="team__employee-name">John Doe</h3>
               <p class="team__employee-job">Product Designer</p>
               <div>
