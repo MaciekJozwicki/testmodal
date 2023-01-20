@@ -157,7 +157,7 @@
             align-items: flex-start;
         }
         &__social {
-            display: block;
+            // display: block;
             margin-left: 70px;
             margin-top: 72px;
         }
@@ -174,12 +174,7 @@
             display: block;
         }
         &__newsletter-elements {
-            display: flex;
             flex-direction: row;
         }
-        &__newsletter-button {
-            
-        }
-
     }
 }

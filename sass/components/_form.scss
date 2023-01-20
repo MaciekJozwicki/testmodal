@@ -76,8 +76,8 @@
     }
     &__checkbox {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 14px;
         letter-spacing: 0.03em;
         position: relative;
     }
@@ -95,7 +95,7 @@
     &__checkbox-custom-icon {
         position: absolute;
         left: 0;
-        bottom: 7px;
+        bottom: 4px;
         opacity: 0;
         border-radius: 2px;
         fill: #fff;
@@ -106,6 +106,17 @@
             background-color: #2196f3;
             border-color: #2196f3;
             opacity: 1;
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    .form {
+        &__checkbox {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &__checkbox-custom-icon {
+            bottom: 7px;
         }
     }
 }
