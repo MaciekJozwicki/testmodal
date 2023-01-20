@@ -5,6 +5,10 @@
     &--bgcolor {
         background-color: $backgroundColor;
     } 
+    &__image img {
+        width: 100%;
+        height: auto;
+    }
     &__header {
         font-size: 28px;
         font-weight: bold;
@@ -71,13 +75,23 @@
     }
 }
 
+@media screen and (min-width:768px) {
+    .team {
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__list-item {
+            max-width: 354px;
+        }
+    }
+}
 
 @media screen and (min-width:1200px) {
     .team {
 
         &__header {
             font-size: 36px;
-    
             margin-bottom: 50px;
         }
         &__list {
@@ -85,26 +99,8 @@
             gap: 30px;
             justify-content: center;
         }
-        // &__list-item {
-        //     box-shadow: 0px 2px 1px 0px #00000033;
-        //     box-shadow: 0px 1px 1px 0px #00000024;
-        //     box-shadow: 0px 1px 3px 0px #0000001F;
-        //     border-radius: 0px 0px 4px 4px;
-        //     background: #FFFFFF;
-        // }
-     
-        // &__employee-job {
-        //     text-align: center;
-        //     padding-bottom: 30px;
-        //     color: $secondaryFontColor;
-        //     font-size: 16px;
-        //     letter-spacing: 0.03em;
-        // }
-        // &__social-list {
-        //     display: flex;
-        //     gap: 10px;
-        //     margin-bottom: 30px;
-        // }
-       
+        &__list-item {
+            max-width: 270px;
+        }
     }
 }
