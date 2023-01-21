@@ -1,19 +1,60 @@
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-right: 0;
+    // margin-left: 155px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 32px;
+    background-color: $whiteColor;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+.menu-container.is-open {
+    transform: translateX(0);
+}
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
 .mobile-menu {
-    max-width: 480px;
     padding-left: 40px;
     padding-top: 48px;
-    padding-bottom: 48px;
-    position: relative;
-    margin: 0 auto;
-
-    &__test {
+    
+    &__toggle {
         position: absolute;
         right: 15px;
         top: 10px;
+        outline: none;
+        background-color: transparent;
+        border: none;
     }
-    &__close-btn {
-
+    &__toggle:hover,
+    &__toggle:focus .mobile-menu__close-btn {
+        fill: $brandColor;
     }
+    
     &__nav {
         display: flex;
         flex-direction: column;
@@ -65,15 +106,28 @@
     &__social {
         margin-top: 64px;
         display: flex;
-
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__social-item:last-child {
+        border: none;
     }
     &__social-item {
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        transform: rotate(90deg);
-
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: $brandColor;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
     }
     &__social-item:link,
     &__social-item:visited {
         text-decoration: none;
+    }
+}
+@media screen and (min-width:768px) {
+    .menu-toggle {
+        display: none;
     }
 }
