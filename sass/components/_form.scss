@@ -80,6 +80,7 @@
         line-height: 14px;
         letter-spacing: 0.03em;
         position: relative;
+       
     }
     &__checkbox-input {
         border: 2px solid #212121;
@@ -109,6 +110,18 @@
         }
     }
 }
+
+@media screen and (max-width:480px) {
+    .form {
+        &__checkbox-custom-icon {
+            bottom: 18px;
+        }
+        &__submit {
+            margin-left: 15%;
+        }
+    }
+}
+
 @media screen and (min-width:1200px) {
     .form {
         &__checkbox {

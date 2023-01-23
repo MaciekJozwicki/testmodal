@@ -17,9 +17,6 @@
     &__contacts {
         display: none;
     }
-    &__mobile-menu-btn {
-        // visibility: hidden;
-    }
     &__mobile-menu-icon {
         visibility: visible;
     }
@@ -28,6 +25,7 @@
 @media screen and (min-width:768px) {
     .header {
         &__wrapper {
+            display: flex;
             padding-top: 26px;
             justify-content:space-between;
             
@@ -122,89 +120,18 @@
         border-bottom: 1px solid #ECECEC;
 
         &__wrapper {
-            display: flex;
-            justify-content: space-between;
             align-items:center;
             padding-top: 25px;
             padding-bottom: 25px;
         }
-        &__nav {
-            display: flex;
-            align-items: center;
-            gap: 93px;
-        }
+        
         &__nav-list {
-            display: flex;
             gap: 46px;
-            position: relative;  
-        }
-        &__nav-item {
-            font-size: 14px;
-            text-decoration: none;
-            letter-spacing: 0.02em;
-            color: $primaryFontColor;
-            font-weight: 500;
-            transition: color 250ms $primaryTransition;
-        }
-        &__nav-item:hover,
-        &__nav-item:focus {
-            color: $brandColor;
-            cursor: pointer;
-        }
-        &__nav-item:hover::after,
-        &__nav-item:focus::after {
-            content: '';
-            width: 58px;
-            height: 4px;
-            top: 46px;
-            display: flex;
-            justify-content: center;
-            background-color: $brandColor;
-            border-radius: 2px;
-            position: absolute;
-        }
-        &__nav-item--is-active::after {
-            content: '';
-            width: 58px;
-            height: 4px;
-            top: 46px;
-            display: flex;
-            justify-content: center;
-            background-color: $brandColor;
-            border-radius: 2px;
-            position: absolute;
         }
         &__contacts {
-            display:flex;
             flex-direction: row;
             align-items: center;
             gap: 30px;
-        }
-        &__contacts-item {
-            font-size: 14px;
-            color: $secondaryFontColor;
-            text-decoration: none;
-            letter-spacing: 0.02em;
-            font-weight: 500;
-            transition: color 250ms $primaryTransition;
-        }
-        &__contacts-item-icon {
-            fill: $secondaryFontColor;
-            margin-right: 10px;
-            padding: 0;
-            transition: fill 250ms $primaryTransition;
-        }       
-        &__contacts-item:hover,
-        &__contacts-item:focus {
-            color: $brandColor;
-            cursor: pointer;
-            
-            .header__contacts-item-icon {
-                fill: $brandColor;
-            }
-        }
-        &__mobile-menu-icon {
-            display: none;
         }
     }
 }

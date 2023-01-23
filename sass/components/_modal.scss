@@ -10,8 +10,7 @@
     position: absolute;
     top: calc(50% - 304px);
     left: calc(50% - 225px);
-    max-width: 450px;
-    max-height: 609px;
+    width: auto;
     background-color: $whiteColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -50,6 +49,21 @@
 
     .modal {
         transform: scale(0.5);
+    }
+}
+@media screen and (max-width:480px) {
+    
+    .modal {
+        max-width: 360px;
+        left: calc(50% - 180px);
+        top: auto;
+        
+    }
+}
+@media screen and (min-width:768px) {
+    .modal {
+        left: calc(50% - 225px);
+        top: auto;
     }
 }
 
